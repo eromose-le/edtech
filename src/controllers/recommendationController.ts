@@ -38,8 +38,6 @@ export const getRecommendations = async (
 
         // Step 2.3: Iterate over engagementHistory and calculate score based on time spent
         engagementHistory?.forEach((engagement) => {
-          console.log({ engagement, course }); // Debugging line
-
           // 2.3.0: Check if courseId matches engagement's courseId
           if (engagement.courseId.toString() === course._id.toString()) {
             score += engagement.timeSpent / 100; // Adjust score based on time spent
