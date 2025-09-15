@@ -160,6 +160,8 @@ Create a `.env` file at the root of the project and add the following variables:
 ```bash
 MONGO_URI=mongodb://mongo:27017/edtech
 PORT=5000
+DB_NAME=edtech
+ENVIRONMENT=development
 ```
 
 ### 4. Run the Application
