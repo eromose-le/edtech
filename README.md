@@ -49,6 +49,10 @@ edtech-backend-ts/
 ├── package.json
 ```
 
+## Postman Documentation Link
+
+- https://documenter.getpostman.com/view/16411809/2sB3HqHdU7
+  
 ## Endpoints
 
 ### 1. **User Management**
@@ -201,6 +205,15 @@ You can test the API using Postman by sending requests to the following endpoint
 
 ## Docker Setup
 
+###### Start docker
+- docker-compose up --build
+###### View logs
+- docker-compose logs backend
+###### Close docker
+- docker-compose down --volumes
+
+
+
 ### Dockerfile
 
 ```dockerfile
@@ -241,9 +254,9 @@ services:
     container_name: edtech-backend
     environment:
       - MONGO_URI=mongodb://mongo:27017/edtech
-      - PORT=5000
+      - PORT=5001
     ports:
-      - "5000:5000"
+      - "5001:5001"
     depends_on:
       - mongo
     networks:
