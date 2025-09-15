@@ -2,12 +2,13 @@
   "name": "edtech-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/server.js",
     "build": "tsc",
-    "dev": "npx tsc && nodemon dist/server.js"
+    "dev": "ts-node src/server.ts",
+    "dev:erons": "npx tsc && nodemon dist/server.js"
   },
   "keywords": [],
   "author": "",
